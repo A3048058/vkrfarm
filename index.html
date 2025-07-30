@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VKR FARM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to VKR FARM</h1>
+      <p>Growing vibrant fruits and raising proud roosters</p>
+    </header>
+
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#cart">Cart</a>
+    </nav>
+
+    <section id="products">
+      <h2>Our Products</h2>
+
+      <div class="product" id="product-RoosterM">
+        <h3>Roosters (Male) - ₹650/kg (60 available)</h3>
+        <img src="images/rooster-male.jpg" alt="Roosters Male" />
+        <p>Healthy and free-range roosters from VKR FARM.</p>
+        <div class="quantity-display" id="count-RoosterM">Quantity: 0</div>
+        <button class="cart-button" onclick="addToCart('RoosterM', 650)">
+          +
+        </button>
+        <button class="cart-button" onclick="removeFromCart('RoosterM')">
+          -
+        </button>
+      </div>
+
+      <div class="product" id="product-RoosterF">
+        <h3>Roosters (Female) - ₹600/kg (60 available)</h3>
+        <img src="images/rooster-female.jpg" alt="Roosters Female" />
+        <p>Healthy and free-range roosters from VKR FARM.</p>
+        <div class="quantity-display" id="count-RoosterF">Quantity: 0</div>
+        <button class="cart-button" onclick="addToCart('RoosterF', 600)">
+          +
+        </button>
+        <button class="cart-button" onclick="removeFromCart('RoosterF')">
+          -
+        </button>
+      </div>
+
+      <div class="product" id="product-Bananas">
+        <h3>Bananas - ₹150/dozen (55 KG AVAILABLE)</h3>
+        <img src="images/bananas.jpg" alt="Bananas" />
+        <p>Sweet, organic bananas freshly harvested.</p>
+        <div class="quantity-display" id="count-Bananas">Quantity: 0</div>
+        <button class="cart-button" onclick="addToCart('Bananas', 150)">
+          +
+        </button>
+        <button class="cart-button" onclick="removeFromCart('Bananas')">
+          -
+        </button>
+      </div>
+
+      <div class="product" id="product-Eggs">
+        <h3>Eggs - ₹15 each (100 available)</h3>
+        <img src="images/eggs.jpg" alt="Eggs" />
+        <p>Farm-fresh eggs laid daily by our healthy hens.</p>
+        <div class="quantity-display" id="count-Eggs">Quantity: 0</div>
+        <button class="cart-button" onclick="addToCart('Eggs', 15)">+</button>
+        <button class="cart-button" onclick="removeFromCart('Eggs')">-</button>
+      </div>
+
+      <div class="product">
+        <h3>Sapotas (Chikoo)</h3>
+        <h4>Unavailable</h4>
+        <img src="images/S.jpg" alt="Sapotas" />
+      </div>
+      <div class="product">
+        <h3>Water Apple</h3>
+        <h4>Unavailable</h4>
+        <img src="images/w.webp" alt="Water Apple" />
+      </div>
+      <div class="product">
+        <h3>Coconut</h3>
+        <h4>Unavailable</h4>
+        <img src="images/C.jpeg" alt="Coconut" />
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About VKR FARM</h2>
+      <p>
+        VKR FARM was started by Vanu, Kalavathi and Rohit with a dream of
+        bringing fresh, chemical-free produce and poultry to local communities.
+      </p>
+
+      <div class="about-images">
+        <img src="images/farm-overview.jpg" alt="Farm Overview" />
+        <img src="images/fresh-organic.jpg" alt="Fresh Produce" />
+        <img src="images/rooster-fam.jpg" alt="Roosters" />
+        <img src="images/family-farm.jpg" alt="Family Farm Team" />
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p><strong>Phone:</strong> +919000873282 / +919848687840</p>
+    </section>
+
+    <section id="cart">
+      <h2>Your Cart</h2>
+      <div id="cart-items"><p>No items in cart.</p></div>
+      <div class="cart-total" id="cart-total"></div>
+      <p>
+        <strong>Note:</strong> Home delivery is not available. Pick up from:
+        <strong>13.63745, 78.45643</strong>
+      </p>
+    </section>
+
+    <div id="red-dot"></div>
+
+    <footer>
+      <p>&copy; 2025 VKR FARM. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
